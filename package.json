@@ -1,0 +1,20 @@
+{
+  "name": "clawdy-watch",
+  "version": "1.0.0",
+  "description": "Clawdbot integration for Zepp OS",
+  "main": "app.js",
+  "author": "twttr",
+  "license": "MIT",
+  "scripts": {
+    "dev": "zeus dev",
+    "build": "zeus build",
+    "preview": "zeus preview"
+  },
+  "devDependencies": {
+    "@aspect-dev/zeus-cli": "^1.0.0",
+    "@zeppos/device-types": "^3.0.0"
+  },
+  "dependencies": {
+    "@aspect-dev/zml": "^1.0.0"
+  }
+}
