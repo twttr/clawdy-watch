@@ -12,18 +12,16 @@
     "vender": "twttr",
     "description": "Clawdbot integration for Zepp OS"
   },
-  "permissions": [
-    "device:os.bg_service"
-  ],
+  "permissions": [],
   "runtime": {
     "apiVersion": {
       "compatible": "3.0.0",
-      "target": "3.0.0",
+      "target": "4.2.0",
       "minVersion": "3.0.0"
     }
   },
   "targets": {
-    "amazfit-active-2": {
+    "active-2-round": {
       "module": {
         "page": {
           "pages": [
@@ -37,11 +35,15 @@
       },
       "platforms": [
         {
-          "name": "amazfit-active-2",
-          "deviceSource": 8650752
+          "name": "active-2",
+          "deviceSource": 8913153
+        },
+        {
+          "name": "active-2",
+          "deviceSource": 8913155
         }
       ],
-      "designWidth": 480
+      "designWidth": 466
     }
   },
   "i18n": {
