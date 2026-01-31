@@ -20,6 +20,7 @@
       "minVersion": "3.0.0"
     }
   },
+  "defaultLanguage": "en-US",
   "targets": {
     "active-2-round": {
       "module": {
