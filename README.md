@@ -13,7 +13,7 @@ Zepp OS mini app for Amazfit Active 2 that integrates with Clawdbot.
 ### 1. Install Zeus CLI
 
 ```bash
-npm install -g @aspect-dev/zeus-cli
+npm install -g @zeppos/zeus-cli
 ```
 
 ### 2. Install dependencies

@@ -11,10 +11,9 @@
     "preview": "zeus preview"
   },
   "devDependencies": {
-    "@aspect-dev/zeus-cli": "^1.0.0",
     "@zeppos/device-types": "^3.0.0"
   },
   "dependencies": {
-    "@aspect-dev/zml": "^1.0.0"
+    "@zeppos/zml": "^0.0.9"
   }
 }
