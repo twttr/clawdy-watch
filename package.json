@@ -11,7 +11,9 @@
     "preview": "zeus preview"
   },
   "devDependencies": {
-    "@zeppos/device-types": "^3.0.0"
+    "@zeppos/device-types": "^3.0.0",
+    "@zeppos/zeus-cli": "^1.8.2",
+    "zeppos-app-utils": "^1.0.0"
   },
   "dependencies": {
     "@zeppos/zml": "^0.0.9"

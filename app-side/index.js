@@ -3,9 +3,9 @@ import { BaseSideService } from '@zeppos/zml/base-side'
 // Configuration - UPDATE THESE!
 const CONFIG = {
   // Your Clawdbot/webhook endpoint
-  apiBase: 'https://your-server.com/api/watch',
+  apiBase: 'http://185.214.99.161:3847',
   // Optional: auth token
-  authToken: 'your-secret-token'
+  authToken: 'clawdy-watch-token-2026'
 }
 
 AppSideService(
