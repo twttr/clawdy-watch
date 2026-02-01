@@ -1,5 +1,5 @@
 import { createWidget, widget, align, prop } from '@zos/ui'
-import { back } from '@zos/router'
+import { back, push } from '@zos/router'
 import { px } from '@zos/utils'
 import { showToast } from '@zos/interaction'
 import { BasePage } from '@zeppos/zml/base-page'
@@ -21,9 +21,9 @@ Page(
 
       // Action buttons
       const actions = [
+        { label: '🎤 Voice Message', route: 'page/voice/index' },
         { label: '💬 Ping Clawdy', command: 'ping' },
         { label: '🏠 Lights Toggle', command: 'lights_toggle' },
-        { label: '🔊 TTS Test', command: 'tts_test' },
         { label: '📧 Check Email', command: 'check_email' }
       ]
 
@@ -35,9 +35,15 @@ Page(
           h: px(64),
           text: action.label,
           radius: px(12),
-          normal_color: 0x333333,
-          press_color: 0x555555,
-          click_func: () => this.sendCommand(action.command, action.label)
+          normal_color: action.route ? 0x662222 : 0x333333,
+          press_color: action.route ? 0x883333 : 0x555555,
+          click_func: () => {
+            if (action.route) {
+              push({ url: action.route })
+            } else {
+              this.sendCommand(action.command, action.label)
+            }
+          }
         })
       })
 

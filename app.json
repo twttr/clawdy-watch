@@ -1,7 +1,7 @@
 {
   "configVersion": "v2",
   "app": {
-    "appId": 1000001,
+    "appId": 1104985,
     "appName": "Clawdy",
     "appType": "app",
     "version": {
@@ -12,7 +12,11 @@
     "vender": "twttr",
     "description": "Clawdbot integration for Zepp OS"
   },
-  "permissions": [],
+  "permissions": [
+    "device:os.bg_service",
+    "device:os.media",
+    "device:os.mic"
+  ],
   "runtime": {
     "apiVersion": {
       "compatible": "3.0.0",
@@ -27,7 +31,8 @@
         "page": {
           "pages": [
             "page/home/index",
-            "page/actions/index"
+            "page/actions/index",
+            "page/voice/index"
           ]
         },
         "app-side": {
@@ -37,11 +42,35 @@
       "platforms": [
         {
           "name": "active-2",
+          "deviceSource": 8913152
+        },
+        {
+          "name": "active-2",
           "deviceSource": 8913153
         },
         {
           "name": "active-2",
           "deviceSource": 8913155
+        },
+        {
+          "name": "active-2",
+          "deviceSource": 8913159
+        },
+        {
+          "name": "active-2",
+          "deviceSource": 10092800
+        },
+        {
+          "name": "active-2",
+          "deviceSource": 10092801
+        },
+        {
+          "name": "active-2",
+          "deviceSource": 10092803
+        },
+        {
+          "name": "active-2",
+          "deviceSource": 10092807
         }
       ],
       "designWidth": 466
